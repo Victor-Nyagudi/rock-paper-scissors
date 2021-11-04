@@ -306,7 +306,8 @@ body.menu-open .info__logo {
 }
 
 body.menu-open .rules,
-body.menu-open .pick__title { 
+body.menu-open .pick__title,
+body.menu-open .outcome__title { 
     color: var(--lightbox-white); 
 }
 
