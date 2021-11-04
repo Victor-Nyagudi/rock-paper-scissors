@@ -70,7 +70,6 @@ const getResult = (opponentPick) => {
             score--;
 
         scoreDOM.textContent = score;
-        console.log(`lost. \nhouse pick: ${houseChoice}\nyour pick: ${opponentPick}\nscore:${score}`);
     }
 
     else if (houseChoice === opponentPick - 1 || houseChoice === opponentPick + 2) {
@@ -79,7 +78,6 @@ const getResult = (opponentPick) => {
         score ++;
 
         scoreDOM.textContent = score;
-        console.log(`won. \nhouse pick: ${houseChoice}\nyour pick: ${opponentPick}\nscore: ${score}`);
     }
 
     else 
