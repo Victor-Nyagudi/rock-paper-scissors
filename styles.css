@@ -86,12 +86,7 @@ header { padding: 2em 0 7em; }
 
 .info__logo { padding-right: 4em; }
 
-.info__logo-container {
-    /* color: white;
-    line-height: .85; */
-
-    padding: .5em;
-}
+.info__logo-container { padding: .5em; }
 
 .info__score {
     font-weight: 700;
@@ -110,8 +105,6 @@ header { padding: 2em 0 7em; }
     font-size: .8rem; 
     color: var(--score-text);
     letter-spacing: 2px;
-
-    /* margin-bottom: .4em; */
 }
 
 .score__number { 
@@ -123,7 +116,6 @@ main { padding-bottom: 8em; }
 
 .step-one {
     display: flex;
-    /* display: none; */
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -211,7 +203,6 @@ footer { text-align: center; }
 }
 
 .step-two { 
-    /* display: grid;  */
     display: none;
     grid-template-areas: 
         'player-pick house-pick'
@@ -279,7 +270,6 @@ footer { text-align: center; }
     position: absolute;
     top: 0;
     
-    /* display: flex; */
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -492,7 +482,6 @@ body.result-shown .house-pick-empty { display: none; }
         right: 0;
         left: 0;
         
-        /* display: grid; */
         display: none;
         grid-template-areas: 
             'rules-title rules-close'
@@ -578,7 +567,6 @@ body.result-shown .house-pick-empty { display: none; }
     }
 
     .step-two { 
-        /* display: flex; */
         align-items: center;
 
         gap: 2em; 
