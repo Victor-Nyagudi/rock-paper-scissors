@@ -127,6 +127,9 @@ openRulesButton.onclick = function() {
         if (option.getAttribute('disabled') === null) 
             option.toggleAttribute('disabled');
     });
+
+    if (playAgainButton.getAttribute('disabled') === null) 
+        playAgainButton.toggleAttribute('disabled');
 }
 
 closeRulesButton.onclick = function() {
@@ -135,6 +138,7 @@ closeRulesButton.onclick = function() {
     rulesMenu.style.display = 'none';
 
     stepOneOptions.forEach(option => option.removeAttribute('disabled'));
+    playAgainButton.removeAttribute('disabled');
 }
 
 for (let i = 0; i < stepOneOptions.length; i++) {
