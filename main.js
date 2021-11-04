@@ -30,8 +30,8 @@ if (localStorage.getItem('score')) {
 const paper = `
     <div class="options__container">
         <div class="options__outer-circle paper">
-            <button class="options__inner-circle">
-                <img src="./images/icon-paper.svg" alt="paper" class="options__icon">
+            <button class="options__inner-circle" aria-label="paper">
+                <img src="./images/icon-paper.svg" alt="" class="options__icon" aria-hidden="true">
             </button>
         </div>
     </div>
@@ -40,8 +40,8 @@ const paper = `
 const scissors = `
     <div class="options__container">
         <div class="options__outer-circle scissors">
-            <button class="options__inner-circle">
-                <img src="./images/icon-scissors.svg" alt="scissor" class="options__icon">
+            <button class="options__inner-circle" aria-label="scissors">
+                <img src="./images/icon-scissors.svg" alt="" class="options__icon" aria-hidden="true">
             </button>
         </div>
     </div>
@@ -50,8 +50,8 @@ const scissors = `
 const rock = `
     <div class="options__container">
         <div class="options__outer-circle rock">
-            <button class="options__inner-circle">
-                <img src="./images/icon-rock.svg" alt="scissor" class="options__icon">
+            <button class="options__inner-circle" aria-label="rock">
+                <img src="./images/icon-rock.svg" alt="" class="options__icon" aria-hidden="true">
             </button>
         </div>
     </div>

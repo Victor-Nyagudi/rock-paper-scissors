@@ -38,30 +38,30 @@
 
       <div class="options__container">
         <div class="options__outer-circle paper">
-          <button type="button" class="options__inner-circle step-one-option">
-            <img src="./images/icon-paper.svg" alt="paper" class="options__icon">
+          <button type="button" class="options__inner-circle step-one-option" aria-label="paper">
+            <img src="./images/icon-paper.svg" alt="" class="options__icon" aria-hidden="true">
           </button>
         </div>
       </div>
 
       <div class="options__container">
         <div class="options__outer-circle scissors">
-          <button type="button" class="options__inner-circle step-one-option">
-            <img src="./images/icon-scissors.svg" alt="scissors" class="options__icon">
+          <button type="button" class="options__inner-circle step-one-option" aria-label="scissors">
+            <img src="./images/icon-scissors.svg" alt="" class="options__icon" aria-hidden="true">
           </button>
         </div>
       </div>
 
       <div class="options__container">
         <div class="options__outer-circle rock">
-          <button type="button" class="options__inner-circle step-one-option">
-            <img src="./images/icon-rock.svg" alt="rock" class="options__icon">
+          <button type="button" class="options__inner-circle step-one-option" aria-label="rock">
+            <img src="./images/icon-rock.svg" alt="" class="options__icon" aria-hidden="true">
           </button>
         </div>
       </div>
     </section>
 
-    <section class="step-two container">
+    <section class="step-two container" aria-live="assertive" aria-atomic="true">
       <h2 class="screen-reader-only">
         Results
       </h2>
@@ -87,7 +87,7 @@
           The House Picked
         </h3>
 
-        <div class="options__container house-pick-empty">
+        <div class="options__container house-pick-empty" aria-hidden="true">
           <div class="options__outer-circle rock empty">
             <button type="button" class="options__inner-circle empty">
             </button>
@@ -100,10 +100,10 @@
     <section class="all-rules container">
       <h2 class="all-rules__title">Rules</h2>
       
-      <img src="./images/image-rules.svg" alt="rules" class="rules-image">
+      <img src="./images/image-rules.svg" alt="paper beats rock, rock beats scissors, scissors beats paper" class="rules-image">
 
-      <button type="button" class="btn close-rules">
-        <img src="./images/icon-close.svg" alt="close menu" class="close-icon">
+      <button type="button" class="btn close-rules" aria-label="close rules menu">
+        <img src="./images/icon-close.svg" alt="" class="close-icon" aria-hidden="true">
       </button>
     </section>
   </main>
