@@ -235,6 +235,12 @@ footer { text-align: center; }
 
 .pick .options__container { padding-bottom: 1.5em; }
 
+.paper.winner,
+.rock.winner,
+.scissors.winner {
+    box-shadow: 0 0 2px 15px rgba(126, 126, 126, 0.1), 0 0 2px 35px rgba(126, 126, 126, 0.1), 0 0 0 65px rgba(126, 126, 126, 0.1);
+}
+
 .pick--house .options__outer-circle.empty { 
     background-image: none;
     box-shadow: none; 
@@ -467,6 +473,12 @@ body.result-shown .house-pick-empty { display: none; }
         width: 60px;
     }
 
+    .paper.winner,
+    .rock.winner,
+    .scissors.winner {
+        box-shadow: 0 0 2px 25px rgba(126, 126, 126, 0.1), 0 0 2px 45px rgba(126, 126, 126, 0.1), 0 0 0 75px rgba(126, 126, 126, 0.1);
+    }
+
     .outcome__title {
         font-size: 2.5rem;
     }
@@ -593,6 +605,12 @@ body.result-shown .house-pick-empty { display: none; }
     .pick .options__icon {
         height: 80px;
         width: 80px;
+    }
+
+    .paper.winner,
+    .rock.winner,
+    .scissors.winner {
+        box-shadow: 0 0 2px 60px rgba(126, 126, 126, 0.1), 0 0 2px 130px rgba(126, 126, 126, 0.1), 0 0 0 190px rgba(126, 126, 126, 0.1);
     }
 
     .outcome__play-again {

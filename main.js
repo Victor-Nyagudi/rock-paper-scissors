@@ -78,6 +78,7 @@ const getResult = (opponentPick) => {
         score ++;
 
         scoreDOM.textContent = score;
+        playerPick.children[1].firstElementChild.classList.add('winner');
     }
 
     else 
@@ -85,7 +86,7 @@ const getResult = (opponentPick) => {
 
     localStorage.setItem('score', `${score}`);
 
-    return houseChoice;
+    return [houseChoice, winLose];
 };
 
 
@@ -93,9 +94,9 @@ const showHousePick = (opponentDecision) => {
     body.classList.add('result-shown');
     resultOptions.style.display = 'block';
 
-    const houseDecision = getResult(opponentDecision);
+    const result = getResult(opponentDecision);
 
-    switch (houseDecision) {
+    switch (result[0]) {
         case 0:
             housePickDOM.innerHTML += paper;
             break;
@@ -112,6 +113,9 @@ const showHousePick = (opponentDecision) => {
             console.log('No criteria met to show house pick.');
             break;
     }
+
+    if (result[1].textContent === 'lose')
+        housePickDOM.children[2].firstElementChild.classList.add('winner');
 };
 
 openRulesButton.onclick = function() {
