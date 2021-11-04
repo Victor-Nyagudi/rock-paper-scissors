@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="screen-reader-only">Rock, Paper, Scisssors Game</h1>
+
+    <div class="info container">
+      <div class="info__logo-container">
+        <img src="./images/logo.svg" alt="rock, paper, scissors logo" class="info__logo">
+      </div>
+      
+      <div class="info__score">
+        <h3 class="score__title">
+          Score
+        </h3>
+        
+        <p class="score__number">
+          0
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="options step-one container">
+      <h2 class="screen-reader-only">
+        Choose between rock,paper, or scissors
+      </h2>
+
+      <div class="options__container">
+        <div class="options__outer-circle paper">
+          <button type="button" class="options__inner-circle step-one-option">
+            <img src="./images/icon-paper.svg" alt="paper" class="options__icon">
+          </button>
+        </div>
+      </div>
+
+      <div class="options__container">
+        <div class="options__outer-circle scissors">
+          <button type="button" class="options__inner-circle step-one-option">
+            <img src="./images/icon-scissors.svg" alt="scissors" class="options__icon">
+          </button>
+        </div>
+      </div>
+
+      <div class="options__container">
+        <div class="options__outer-circle rock">
+          <button type="button" class="options__inner-circle step-one-option">
+            <img src="./images/icon-rock.svg" alt="rock" class="options__icon">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="step-two container">
+      <h2 class="screen-reader-only">
+        Results
+      </h2>
+
+      <div class="pick pick--player">
+        <h3 class="pick__title">
+          You picked
+        </h3>
+      </div>
+      
+      <div class="outcome">
+        <h3 class="outcome__title">
+          You <span class="result"></span>
+        </h3>
+        
+        <button type="button" class="btn outcome__play-again">
+          Play again
+        </button>
+      </div> 
+
+      <div class="pick pick--house">
+        <h3 class="pick__title">
+          The House Picked
+        </h3>
+
+        <div class="options__container house-pick-empty">
+          <div class="options__outer-circle rock empty">
+            <button type="button" class="options__inner-circle empty">
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="all-rules container">
+      <h2 class="all-rules__title">Rules</h2>
+      
+      <img src="./images/image-rules.svg" alt="rules" class="rules-image">
+
+      <button type="button" class="btn close-rules">
+        <img src="./images/icon-close.svg" alt="close menu" class="close-icon">
+      </button>
+    </section>
+  </main>
+
+  <footer class="container">
+    <button type="button" class="btn rules">
+      Rules
+    </button>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
