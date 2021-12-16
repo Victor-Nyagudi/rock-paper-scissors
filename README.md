@@ -61,10 +61,8 @@ I've attached 4 screenshots in the `/screenshots` folder: mobile, tablet, deskto
 
 ### Links
 
-I'll update these links once I've submitted my solution.
-
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/mobilefirst-solution-using-flexbox-css-grid-and-vanilla-js-SbacbgA9O)
+- [Live Site URL](https://victor-nyagudi.github.io/rock-paper-scissors/)
 
 ## My process
 
